@@ -3,20 +3,69 @@
 <html>
 	<head>
 		<title>Acompanhamento de Egressos</title>
-			<link rel="stylesheet" href="estilo/estilo.css" />
+		<link rel="stylesheet" href="estilo/estilo.css" />
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript"> google.load("visualization", "1", {packages:["corechart"]});
+			google.setOnLoadCallback(drawChart);
+		
+			function drawChart() {
+				var dados = google.visualization.arrayToDataTable([
+				  ['Linguagem', 'Quando gosto dela'],
+				  ['Java', 40],
+				  ['PHP', 30],
+				  ['Javascript', 25],
+				  ['C#', 5],
+				   
+				]);
+				
+				var options = {
+						title: 'Linguagens',
+						is3D: true
+				};
+				
+				var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+				chart.draw(dados, options);
+
+				var data = google.visualization.arrayToDataTable([
+				  ['Ano', 'Vendas', 'Despesas'],
+				  ['2004',  1000, 400],
+				  ['2005',  1170, 460],
+				  ['2006',  660, 1120],
+				  ['2007',  1030, 540]
+				]);
+
+				var options = {
+				  title: 'Performance',
+				  vAxis: {title: 'Anos', titleTextStyle: {color: 'red'}}
+				};
+
+				var barras = new google.visualization.BarChart(document.getElementById('barras'));
+				barras.draw(data, options);
+
+				var options1 = {
+				  title: 'Performance',
+				  hAxis: {title: 'Anos',  titleTextStyle: {color: 'red'}}
+				};
+
+				var linhas = new google.visualization.LineChart(document.getElementById('linhas'));
+				linhas.draw(data, options1);
+			 
+			}
+				  	
+		</script>	
 	</head>
      
      <body>
 		<div class="header">
 			<div class="linha">
 				<head>
-					<div class="coluna col4">
+					<div class="coluna col5">
 						<img width="242px" height="63px" src="imagens/logo_if.png">
 					</div>
-					<div class="coluna col2">
+					<div class="coluna colegressos">
 						<h1 class="egressos">ACOMPANHAMENTO DE EGRESSOS</h1>
 					</div>
-					<div class="coluna col6">
+					<div class="coluna col1">
 						<nav>
 							<ul class="menu inline sem-marcador active">   
 								<li><a href="logout.html">Sair</a></li>
@@ -29,18 +78,35 @@
 		
 		<div class="encontro_de_egressos">
 			<div class="linha">
-				<img width="23px" height="23px" src="imagens/seta_dupla.png"> <h2><p>Encontro</p></h2>	
+				<div class="coluna col0">
+					<img width="23px" height="23px" src="imagens/seta_dupla.png">
+				</div>
+				<div class="coluna col12">
+					<h2><p>Encontro de Egressos 2019 - IF Goiano Campus Ceres </p></h2>	
+				</div>
 			</div>
 		</div>
 		
+		<div id="chart_div" style="width: 900px; height: 500px;"></div>
+		<div id="barras" style="width: 900px; height: 500px;"></div>
+		<div id="linhas" style="width: 900px; height: 500px;"></div>
+		
 		<div class="rodape">
 			<div class="linha">
-				<div class="coluna col7">
+				<div class="coluna colface">
 					<img width="30px" height="30px" src="imagens/facebook.png">
-					<a href="https://pt-br.facebook.com/ifgoianoceresoficial">    /ifgoianoceresoficial</a>
-					<!--<img width="30px" height="30px" src="imagens/instagram.png"> -->
-					<a href="https://www.instagram.com/ifgoianoceres">    @ifgoianoceres</a>
+				</div>
+				<div class="coluna colface">
+					<a href="https://pt-br.facebook.com/ifgoianoceresoficial">/ifgoianoceresoficial</a>
+				</div>
+				<div class="coluna col5">
+					<img width="30px" height="30px" src="imagens/instagram.png">
+					<a href="https://www.instagram.com/ifgoianoceres">@ifgoianoceres</a>
+				</div>
+				<div class="coluna col3">
 					<a href="https://www.ifgoiano.edu.br/ceres">www.ifgoiano.edu.br/ceres</a>
+				</div>
+				<div class="coluna col1">
 					<p>(62) 3307-7100</p>
 				</div>
 		    </div>
