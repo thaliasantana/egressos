@@ -1,0 +1,77 @@
+body{
+	font-family: Calibri;
+	margin: 0px;	/* Defini que todo o body não tem margem*/
+}
+
+.container{
+	width: 100vw; /*Defini a largura da classe conteiner que fica dentro do body*/
+	height: 100vh; /*Defini a altura da classe conteiner que fica dentro do body*/
+	background: #FFFFFF; /*Defini a cor da classe conteiner que fica dentro do body*/
+	display: flex; /*Defini tipo de display, neste casso, flex*/
+	flex-direction: column; /*Defini a direção dos item do display, que seram em columas, repare que tudo que esta dentro da section esta em coluna*/
+	justify-content: center; /*Alinha tudo no centro da section e em columa como foi definido a cima*/
+	align-items: center; /*defini o alinhamento dos itens da section*/
+	
+}
+
+header{
+  font-family: Calibri;
+  background: #A9F5A9; /*Defini a cor de fundo do header, que e o cabeçalho definido no HTML*/
+  width: 100%;
+  position: absolute; /*possição absolute, fica por cima de tudo*/
+  display: flex;
+  justify-content: caption-side; /*esta justificando os itens colocando um espaço entre eles*/
+  align-items: center;
+  padding: 40px 0px 200px; /*padding é uma margem interna, começando de cima, esquerda, baixo, direita*/
+}
+header nav{
+  display: flex; /*Defini o display da 'nav' que estao dentro do header*/
+}
+header li{
+  font-size: 30px; /*Defini o tamanho da fonte de todos os 'li' que estao no header*/
+  margin: 0 30px;
+}
+header a{
+  font-size: 18px; !important /*Defini a font de todo 'a' que esta dentro do header, o !important diz que se tiver outro estilo esse ira se sobressair somente dentro da header*/
+  margin: 0 30px;
+}
+header li a{ /*Defini os estilos para todos os 'li' e 'a' do header*/
+  color: #000000;
+  text-decoration: none;
+  text-align: right;
+  margin-right: -30px;
+  
+}
+
+/*mesma coisa do de cima so que com a img e a div .footer*/
+img{
+  width: 300px;
+  height: 72px;
+  margin: 0 35px;
+}
+
+nav{
+  list-style: none;
+  font-family: Calibri;
+}
+
+.footer {
+    font-family: Calibri;
+    left: 0;
+    bottom: 0;
+    background: #A9F5A9;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 15px 0px 15px;
+  }
+
+.footer img{
+  width: 25px;
+  height: 25px;
+  margin-right: 9px;
+}
+.footer p{	
+  /*só mudar aqui a margem, tinha colocado assim margin-left: 1200px;*/
+}
