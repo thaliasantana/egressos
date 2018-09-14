@@ -11,7 +11,8 @@ body{
 	flex-direction: column; /*Defini a direção dos item do display, que seram em columas, repare que tudo que esta dentro da section esta em coluna*/
 	justify-content: center; /*Alinha tudo no centro da section e em columa como foi definido a cima*/
 	align-items: left; /*defini o alinhamento dos itens da section*/
-	margin-left: 40px;
+	/*padding: 0px 40px; */
+	margin-left: 40px; 
 	float: left;
 }
 
@@ -20,7 +21,7 @@ body{
 	font-family: Calibri;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 25px;
     text-align: center;
     text-decoration: none;
 	margin: 4px 2px;
