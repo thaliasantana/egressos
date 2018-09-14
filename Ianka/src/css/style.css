@@ -3,16 +3,27 @@ body{
 	margin: 0px;	/* Defini que todo o body não tem margem*/
 }
 
+.font{
+	font-size: 35px;
+	font-weight: bold;	
+}
+
+.alinhar {
+	margin-top: 100px;
+	width: 1300px;
+	height: 410px;
+	margin-left: 30px;
+	background: yellow;
+}
+
 .container{
 	width: 100vw; /*Defini a largura da classe conteiner que fica dentro do body*/
 	height: 100vh; /*Defini a altura da classe conteiner que fica dentro do body*/
-	background: #FFFFFF; /*Defini a cor da classe conteiner que fica dentro do body*/
+	background: red; /*Defini a cor da classe conteiner que fica dentro do body*/
 	display: flex; /*Defini tipo de display, neste casso, flex*/
 	flex-direction: column; /*Defini a direção dos item do display, que seram em columas, repare que tudo que esta dentro da section esta em coluna*/
 	justify-content: center; /*Alinha tudo no centro da section e em columa como foi definido a cima*/
 	align-items: left; /*defini o alinhamento dos itens da section*/
-	/*padding: 0px 40px; */
-	margin-left: 40px; 
 	float: left;
 }
 
