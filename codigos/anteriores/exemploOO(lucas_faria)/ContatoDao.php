@@ -111,7 +111,7 @@ class ContatoDao implements iModeloCrudDao {
                    $getRow = $operacao->fetch(PDO::FETCH_OBJ);
                    $idReturn = (int) $getRow->id + 1;
                    return $idReturn;
-                } else {
+                } else {                
                    throw new Exception("Ocorreu um problema com o banco de dados");
                    exit();
                 }
