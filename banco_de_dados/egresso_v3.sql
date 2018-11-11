@@ -10,12 +10,8 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 -- -----------------------------------------------------
 -- Schema dbegressos
 -- -----------------------------------------------------
-
--- -----------------------------------------------------
--- Schema dbegressos
--- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `dbegressos` DEFAULT CHARACTER SET utf8 ;
-USE `dbegressos` ;
+CREATE SCHEMA IF NOT EXISTS `dbegressos` DEFAULT CHARACTER SET utf8;
+USE `dbegressos`;
 
 -- -----------------------------------------------------
 -- Table `dbegressos`.`pais`
@@ -24,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `dbegressos`.`pais` (
   `idPais` INT NOT NULL AUTO_INCREMENT,
   `nomePais` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`idPais`))
-ENGINE = InnoDB;
+ENGINE = InnoDB DEFAULT CHARSET=utf8;
 
 
 -- -----------------------------------------------------
@@ -41,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `dbegressos`.`estado` (
     REFERENCES `dbegressos`.`pais` (`idPais`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+ENGINE = InnoDB DEFAULT CHARSET=utf8;
 
 
 -- -----------------------------------------------------
@@ -58,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `dbegressos`.`cidade` (
     REFERENCES `dbegressos`.`estado` (`idEstado`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+ENGINE = InnoDB DEFAULT CHARSET=utf8;
 
 
 -- -----------------------------------------------------
@@ -86,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `dbegressos`.`egresso` (
     REFERENCES `dbegressos`.`cidade` (`idCidade`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+ENGINE = InnoDB DEFAULT CHARSET=utf8;
 
 
 -- -----------------------------------------------------
@@ -96,7 +92,7 @@ CREATE TABLE IF NOT EXISTS `dbegressos`.`curso` (
   `idCurso` INT NOT NULL AUTO_INCREMENT,
   `nomeCurso` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`idCurso`))
-ENGINE = InnoDB;
+ENGINE = InnoDB DEFAULT CHARSET=utf8;
 
 
 -- -----------------------------------------------------
@@ -121,7 +117,7 @@ CREATE TABLE IF NOT EXISTS `dbegressos`.`cursoConcluido` (
     REFERENCES `dbegressos`.`egresso` (`idEgresso`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+ENGINE = InnoDB DEFAULT CHARSET=utf8;
 
 
 -- -----------------------------------------------------
@@ -131,7 +127,7 @@ CREATE TABLE IF NOT EXISTS `dbegressos`.`pergunta` (
   `idPergunta` INT NOT NULL AUTO_INCREMENT,
   `enunciadoPergunta` VARCHAR(300) NOT NULL,
   PRIMARY KEY (`idPergunta`))
-ENGINE = InnoDB;
+ENGINE = InnoDB DEFAULT CHARSET=utf8;
 
 
 -- -----------------------------------------------------
@@ -148,7 +144,7 @@ CREATE TABLE IF NOT EXISTS `dbegressos`.`opcao` (
     REFERENCES `dbegressos`.`pergunta` (`idPergunta`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+ENGINE = InnoDB DEFAULT CHARSET=utf8;
 
 
 -- -----------------------------------------------------
@@ -177,7 +173,7 @@ CREATE TABLE IF NOT EXISTS `dbegressos`.`resposta` (
     REFERENCES `dbegressos`.`opcao` (`idOpcao`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+ENGINE = InnoDB DEFAULT CHARSET=utf8;
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
