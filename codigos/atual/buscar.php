@@ -23,23 +23,45 @@
 			<label> Realize sua inscrição para o Encontro de Egressos 2019 </label> <br> <br> <br>
 			
 			<?php
-				$con =  new mysqli("localhost", "root", "", "dbegresso");
+				$con =  new mysqli("localhost", "root", "", "dbegressos");
 
 				$cpf = $_POST["cpf"];	
 				
-				$sql = mysqli_query($con, "select * from egresso where cpf = '$cpf';") or die (
+				$sql = mysqli_query($con, "select * from egresso where cpfEgresso = '$cpf';") or die (
 				mysqli_error($con)
 				);
 				
-				while($aux = mysqli_fetch_assoc($sql)){
-					echo "<br />". "ID: ".$aux["id"]."<br />";
-					echo "Nome: ".$aux["nome"]."<br />";
-					echo "CPF: ".$aux["cpf"]."<br />";
+				if ($aux = mysqli_fetch_assoc($sql)){
+					echo "<a href='update.php'>Alterar Cadastro</a> <br />";
+					echo "<a href='questionario.php'>Avançar</a> <br />";
+					echo "Nome: <br />";
+					echo "<input type='text' name='nome' value='".$aux["nomeEgresso"]."'> <br /><br />";
+					echo "CPF: <br />";
+					echo "<input type='text' name='cpf' value='".$aux["cpfEgresso"]."'> <br /><br />";
+					echo "Data de Nascimento: <br />";
+					echo "<input type='date' name='data' value='".$aux["dataNascimentoEgresso"]."'> <br /><br />";
+					echo "E-mail: <br />";
+					echo "<input type='email' name='email' value='".$aux["emailEgresso"]."'> <br /><br />";
+					echo "Telefone: <br />";
+					echo "<input type='text' name='telefone' value='".$aux["telefoneEgresso"]."'> <br /><br />";
+					echo "WhatsApp: <br />";
+					echo "<input type='text' name='whatsapp' value='".$aux["whatsappEgresso"]."'> <br /><br />";
+					echo "Sexo: <br />";
+					echo "<input type='text' name='sexo' value='".$aux["sexoEgresso"]."'> <br /><br />";
+					echo "Endereço: <br />";
+					echo "<input type='text' name='endereco' value='".$aux["enderecoEgresso"]."'> <br /><br />";
+					echo "Número: <br />";
+					echo "<input type='text' name='numero' value='".$aux["numeroEnderecoEgresso"]."'> <br /><br />";
+					echo "Setor: <br />";
+					echo "<input type='text' name='setor' value='".$aux["setorEnderecoEgresso"]."'> <br /><br />";
+					echo "Complemento: <br />";
+					echo "<input type='text' name='complemento' value='".$aux["complementoEgresso"]."'> <br /><br />";
+					//echo "<a href='update.php'> Alterar Cadastro </a> <br />";
+					//echo "<a href='perguntas.php'> Avançar </a> <br />";
+				} else {
+					echo "CPF não cadastrado! <br /> <br />"; 
+					echo "<a href='cadastrar.html'> Criar Cadastro </a>";
 				}
-				
-				//echo "CPF não cadastrado! <br /> <br />"; 
-				
-				//echo "<a href='cadastrar.html'> Criar Cadastro </a>";
 
 				$con->close();
 		

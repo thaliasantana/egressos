@@ -1,0 +1,10 @@
+INSERT INTO pergunta (enunciadoPergunta) VALUES ("Qual seu nível de satisfação em relação ao curso?");
+INSERT INTO pergunta (enunciadoPergunta) VALUES ("Qual seu nível de satisfação em relação ao IF Goiano?");
+INSERT INTO pergunta (enunciadoPergunta) VALUES ("Qual seu nível de satisfação em relação às atividades de ensino, pesquisa e extensão?");
+INSERT INTO pergunta (enunciadoPergunta) VALUES ("Sente-se capacitado a ingressar no mercado de trabalho?");
+INSERT INTO pergunta (enunciadoPergunta) VALUES ("Tem interesse em voltar a Instituição para outros cursos?");
+INSERT INTO pergunta (enunciadoPergunta) VALUES ("Continua estudando?");
+INSERT INTO pergunta (enunciadoPergunta) VALUES ("Trabalha?");
+INSERT INTO pergunta (enunciadoPergunta) VALUES ("Já participou do Encontro de Egressos?");
+INSERT INTO pergunta (enunciadoPergunta) VALUES ("Como ficou sabendo do evento?");
+INSERT INTO pergunta (enunciadoPergunta) VALUES ("Tem hábito de acessar o site do IF Goiano?");

@@ -12,7 +12,13 @@
 	echo $to . "<br />";
 	echo $assunto;
 	
-	mail($to, $assunto, $mensagem);
+    $a = mail($to, $assunto, $mensagem);
+
+    if($a){
+        echo "True";
+    } else {
+        echo "False";
+    }
   
-	header("location:obrigada.html");
+	//header("location:obrigada.html");
 ?>

@@ -1,0 +1,57 @@
+Qual seu nível de satisfação em relação ao curso?
+Excelente
+Ótimo
+Bom
+Regular
+Ruim
+Péssimo
+
+Qual seu nível de satisfação em relação ao IF Goiano?
+Excelente
+Ótimo
+Bom
+Regular
+Ruim
+Péssimo
+
+Qual seu nível de satisfação em relação às atividades de ensino, pesquisa e extensão?
+Excelente
+Ótimo
+Bom
+Regular
+Ruim
+Péssimo
+
+Sente-se capacitado a ingressar no mercado de trabalho?
+Sim, totalmente
+Sim, parcialmente
+Não
+
+Tem interesse em voltar a Instituição para outros cursos?
+Sim
+Não
+Já retornei
+
+Continua estudando?
+Sim
+Não
+
+Trabalha?
+Sim, na área
+Sim, em outra área
+Não
+
+Já participou do Encontro de Egressos?
+Sim
+Não
+
+Como ficou sabendo do evento?
+Amigos
+WhatsApp
+Redes sociais
+E-mail
+Site Institucional
+
+Tem hábito de acessar o site do IF Goiano?
+Sim
+Não
