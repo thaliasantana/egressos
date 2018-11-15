@@ -99,7 +99,7 @@ ENGINE = InnoDB DEFAULT CHARSET=utf8;
 -- Table `dbegressos`.`cursoConcluido`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `dbegressos`.`cursoConcluido` (
-  `idCursoConcluido` INT NOT NULL,
+  `idCursoConcluido` INT NOT NULL AUTO_INCREMENT,
   `anoFimCursoConcluido` INT NOT NULL,
   `anoInicioCursoConcluido` INT NOT NULL,
   `idCurso` INT NOT NULL,

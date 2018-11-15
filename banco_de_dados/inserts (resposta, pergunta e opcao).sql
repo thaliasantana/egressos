@@ -4,7 +4,19 @@ INSERT INTO estado (nomeEstado, idPais) VALUES ("Goiás", 1);
 
 INSERT INTO cidade (nomeCidade, idEstado) VALUES ("Ceres", 1);
 
-INSERT INTO curso (nomeCurso) VALUES ("Técnico agrícola");
+INSERT INTO curso (nomeCurso) VALUES ("Técnico Agrícola");
+INSERT INTO curso (nomeCurso) VALUES ("Técnico Informática para Internet Integrado a Ensino Médio");
+INSERT INTO curso (nomeCurso) VALUES ("Técnico Meio Ambiente Integrado a Ensino Médio");
+INSERT INTO curso (nomeCurso) VALUES ("Técnico Agropecuária Integrado a Ensino Médio");
+INSERT INTO curso (nomeCurso) VALUES ("Bacharelado em Sistemas de Informação");
+INSERT INTO curso (nomeCurso) VALUES ("Bacharelado em Zootecnia");
+INSERT INTO curso (nomeCurso) VALUES ("Bacharelado em Agronomia");
+INSERT INTO curso (nomeCurso) VALUES ("Licenciatura em Ciências Biolôgicas");
+INSERT INTO curso (nomeCurso) VALUES ("Licenciatura em Química");
+INSERT INTO curso (nomeCurso) VALUES ("Pós-graduação Ensino em Ciências da Natureza");
+INSERT INTO curso (nomeCurso) VALUES ("Pós-graduação Matemática");
+INSERT INTO curso (nomeCurso) VALUES ("Mestrado em Irrigação do Cerrado");
+
 select * from egresso;
 INSERT INTO egresso VALUES (null, "Guilherme Machado", "12345678998", "1998-03-01", "guimachado@gmail.com", "62987654321", "62123456789", 
 "M", "Rua 1", "100", "Centro", "Casa", 1);
@@ -30,8 +42,8 @@ INSERT INTO egresso VALUES (null, "Pedro Gabriel Paiva", "89765489045", "1997-09
 "M", "Avenida Radial Leste", "349", "graviola", "torre e", 4);
 INSERT INTO egresso VALUES (null, "Samara Dália Tavares Silva", "89765564345", "1997-09-10", "samaara@hotmail.com", "62994440969", "62994440969", 
 "F", "Avenida sudeste", "348", "Norte", "casa", 5);
-INSERT INTO egresso VALUES (null, "Gustavo Neves da Cruz", "89980909095", "1994-09-10", "gustavo@hotmail.com", "62990900969", "62990900969", 
-"M", "Avenida jaboticaba", "323", "Vale dos Navios" "casa", 5);
+INSERT INTO egresso VALUES (null, "Gustavo Neves da Cruz", "89952564345", "1992-09-10", "gusneves@hotmail.com", "62995440969", "62995440969", 
+"M", "Avenida sudeste", "38", "Norte", "casa", 5);
 INSERT INTO egresso VALUES (null, "Laryssa Coe Lucena", "89765509045", "1989-09-19", "laryssa@hotmail.com", "629894534534", "629894534534", 
 "F", "Avenida M", "358", "Marista", "casa", 4);
 INSERT INTO egresso VALUES (null, "Ian Seo Takose", "89986545655", "1995-09-10", "seoian@hotmail.com", "62998900969", "62998900969", 
@@ -54,7 +66,7 @@ INSERT INTO egresso VALUES (null, "Júlia Vilaça de Queiroz Magalhães", "89729
 "F", "Rua Amado", "290", "Vale das Melancias", "Casa", 4);
 INSERT INTO egresso VALUES (null, "	Maria Clara Acioli Lins Rocha", "89098769090", "2001-11-12", "mariacla@gmail.com", "62943765432", "62943765432", 
 "F", "Rua Beira Mar", "23", "Vila rural", "Casa", 1);
-INSERT INTO egresso VALUES (null, "Maria Luisa Cardozo Elias", "89725609567", "2002-11-09", "mariaaa@gmail.com", "62943254763", "62943254763", 
+INSERT INTO egresso VALUES (null, "Maria Luisa Cardozo Elias", "97655609567", "2002-11-09", "mariaaa@gmail.com", "62943254763", "62943254763", 
 "F", "Rua tabular", "28", "Marista", "Casa", 1);
 INSERT INTO egresso VALUES (null, "Isabela Cunha da Silva", "89729999393", "2002-09-09", "isa@gmail.com", "62997654321", "62997654321", 
 "F", "Rua Teodoro", "7898", "Norte", "Casa", 1);
@@ -72,7 +84,7 @@ INSERT INTO egresso VALUES (null, "Gabriel de Alencar Fernandes", "67543399333",
 "M", "Rua 34", "98", "Vale do Araguaia", "Casa", 1);
 INSERT INTO egresso VALUES (null, "Ana Julia Oliveira", "65643212309", "1995-08-06", "anajulia@gmail.com", "62989098876", "62989098876", 
 "F", "Rua Z", "2988", "Centro", "Casa", 6);
-INSERT INTO egresso VALUES (null, "	Augusto Soares Gonçalves", "75690093373", "2003-08-06", "augustosoaresm@gmail.com", "62982345321", "62982345321", 
+INSERT INTO egresso VALUES (null, "Augusto Soares Gonçalves", "75690093373", "2003-08-06", "augustosoaresm@gmail.com", "62982345321", "62982345321", 
 "M", "Rua Lobato", "290", "Vale do Melão", "Casa", 4);
 INSERT INTO egresso VALUES (null, "Helena Fraga La Noce", "12349099333", "2001-09-06", "helena@gmail.com", "62999999821", "62999999821", 
 "M", "Rua Amora", "2679", "Centro", "Casa", 1);
@@ -154,7 +166,7 @@ INSERT INTO egresso VALUES (null, "Joao Victor Brito Craveiro", "22216432134", "
 "M", "Avenida Carajá", "237", "Centro", "casa", 5);
 INSERT INTO egresso VALUES (null, "Lincoln Daisuke Kinukawa Sato", "234678331234", "2002-11-11", "lisato@gmail.com", "62995443949", "62995443949", 
 "M", "Avenida Modelo", "190", "Jundaia", "Casa", 5);
-INSERT INTO egresso VALUES (null, "Lariane Fernandes de Faria", "11122253332", "2001-11-03", "larifaria@gmail.com", "62985673234", "62985673234", 
+INSERT INTO egresso VALUES (null, "Lariane Fernandes de Faria", "11134253332", "2001-11-03", "larifaria@gmail.com", "62985673234", "62985673234", 
 "F", "Rua MM", "1155", "Cedro", "Casa", 3);
 INSERT INTO egresso VALUES (null, "Thais de Albuquerque Pereira", "45656432134", "1995-09-23", "thaispereira@gmail.com", "62987444421", "62987444421", 
 "F", "Avenida 51", "432", "Centro", "casa", 5);
@@ -172,11 +184,11 @@ INSERT INTO egresso VALUES (null, "Davi Teixeira de Souza", "83345345111", "1993
 "M", "Avenida  da Damas", "5213", "Vale dos passáros", "casa", 1);
 INSERT INTO egresso VALUES (null, "Ana Luiza Medeiros Bacelar", "83767645643", "1991-12-14", "analuiza@hotmail.com", "62993600069", "62993600069", 
 "F", "Avenida  Guariroba", "5212", "Centro", "casa", 1);
-INSERT INTO egresso VALUES (null, "Cauã Pereira Masseu", "83345345111", "1983-12-10", "cuaamasseu@hotmail.com", "62987252229", "62993658829", 
+INSERT INTO egresso VALUES (null, "Cauã Pereira Masseu", "83345444111", "1983-12-10", "cuaamasseu@hotmail.com", "62987252229", "62993658829", 
 "M", "Avenida  da Padroeira", "5290", "Vale dos canários", "casa", 1);
 INSERT INTO egresso VALUES (null, "Natasha Kayle de Alencar Maia", "83765555643", "1955-12-18", "nataalen@hotmail.com", "62993608739", "62993608739", 
 "F", "Rua Caruarú", "5982", "Centro", "casa", 1);
-INSERT INTO egresso VALUES (null, "Douglas Felipe Speck", "83345345111", "1983-12-10", "felipedouglas@hotmail.com", "62987252221", "62987252221", 
+INSERT INTO egresso VALUES (null, "Douglas Felipe Speck", "83345365411", "1983-12-10", "felipedouglas@hotmail.com", "62987252221", "62987252221", 
 "M", "Avenida  Nazaré Tedesco", "5276", "Norte", "casa", 1);
 INSERT INTO egresso VALUES (null, "Mariana Caldas Borges", "83765532143", "1943-12-18", "maricaldas@hotmail.com", "62993603219", "62993603219", 
 "F", "Rua 38", "592", "Centro", "casa", 1);
@@ -194,9 +206,41 @@ INSERT INTO egresso VALUES (null, "Marcela Lima Fernandes", "44458769090", "1990
 "F", "Rua Benedito", "237", "Vitória", "Casa", 1);
 INSERT INTO egresso VALUES (null, "Natália de Araujo Fabris Rodrigues", "89729867567", "2002-08-19", "natalia@gmail.com", "62949864763", "62949864763", 
 "F", "Rua Baú", "28", "Marisa", "Casa", 1);
+INSERT INTO egresso VALUES (null, "Thierys Renner Nery de Soua", "89724358567", "2001-12-29", "nery@gmail.com", "62940064763", "62940064763", 
+"F", "Rua Santa Fé", "2878", "Matina", "Casa", 1);
+INSERT INTO egresso VALUES (null, "Jose Euclides Arruda Neto", "89724666667", "1995-12-29", "josearruda@gmail.com", "62945444763", "62909064763", 
+"M", "Rua Santa Ana", "2871", "Ipiranga", "Casa", 1);
+INSERT INTO egresso VALUES (null, "Lucas Araújo Bianchi", "89724985667", "1958-12-29", "lucasbianchi@gmail.com", "62945478763", "62945478763", 
+"M", "Rua Santana", "2875", "Ipirangapora", "Casa", 1);
+INSERT INTO egresso VALUES (null, "Marcelo Torres Ramos de Andrade", "89724666614", "1990-12-29", "marcelotorres@gmail.com", "62909044763", "62976064763", 
+"M", "Rua Santa Tereza", "2081", "Caxias", "Casa", 1);
+INSERT INTO egresso VALUES (null, "Pedro Freixinho Nunes", "89728885667", "1955-12-29", "Pedronunes@gmail.com", "62945475563", "62945475563", 
+"M", "Rua D", "2870", "Ipia", "Casa", 1);
+
+
 
 INSERT INTO cursoConcluido (anoFimCursoConcluido, anoInicioCursoConcluido, idCurso, idEgresso) 
 VALUES (2014, 2012, 1, 1);
+INSERT INTO cursoConcluido (anoFimCursoConcluido, anoInicioCursoConcluido, idCurso, idEgresso) 
+VALUES (2014, 2010, 4, 2);
+INSERT INTO cursoConcluido (anoFimCursoConcluido, anoInicioCursoConcluido, idCurso, idEgresso) 
+VALUES (2000, 1996, 2, 3);
+INSERT INTO cursoConcluido (anoFimCursoConcluido, anoInicioCursoConcluido, idCurso, idEgresso) 
+VALUES (2014, 2012, 5, 4);
+INSERT INTO cursoConcluido (anoFimCursoConcluido, anoInicioCursoConcluido, idCurso, idEgresso) 
+VALUES (2005, 2001, 6, 5);
+INSERT INTO cursoConcluido (anoFimCursoConcluido, anoInicioCursoConcluido, idCurso, idEgresso) 
+VALUES (2014, 2010, 1, 6);
+INSERT INTO cursoConcluido (anoFimCursoConcluido, anoInicioCursoConcluido, idCurso, idEgresso) 
+VALUES (2010, 2014, 3, 7);
+INSERT INTO cursoConcluido (anoFimCursoConcluido, anoInicioCursoConcluido, idCurso, idEgresso) 
+VALUES (1998, 1995, 6, 8);
+INSERT INTO cursoConcluido (anoFimCursoConcluido, anoInicioCursoConcluido, idCurso, idEgresso) 
+VALUES (2004, 2000, 8, 9);
+INSERT INTO cursoConcluido (anoFimCursoConcluido, anoInicioCursoConcluido, idCurso, idEgresso) 
+VALUES (2011, 2008, 2, 10);
+INSERT INTO cursoConcluido (anoFimCursoConcluido, anoInicioCursoConcluido, idCurso, idEgresso) 
+VALUES (1999, 1996, 4, 11);
 
 /* Aqui começa de fato todas as inserções referentes ao questionário */
 
