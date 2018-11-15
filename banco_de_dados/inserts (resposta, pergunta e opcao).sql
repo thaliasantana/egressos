@@ -11,9 +11,10 @@ INSERT INTO cidade (nomeCidade, idEstado) VALUES ("Rialma", 1);
 INSERT INTO cidade (nomeCidade, idEstado) VALUES ("Nova Glória", 1);
 
 INSERT INTO curso (nomeCurso) VALUES ("Técnico Agrícola");
-INSERT INTO curso (nomeCurso) VALUES ("Técnico em Informática para Internet");
-INSERT INTO curso (nomeCurso) VALUES ("Técnico em Meio Ambiente");
-INSERT INTO curso (nomeCurso) VALUES ("Técnico em Agropecuária");
+INSERT INTO curso (nomeCurso) VALUES ("Técnico em Informática para Internet Integrado ao Ensino Médio");
+INSERT INTO curso (nomeCurso) VALUES ("Técnico em Informática Integrado ao Ensino Médio");
+INSERT INTO curso (nomeCurso) VALUES ("Técnico em Meio Ambiente Integrado ao Ensino Médio");
+INSERT INTO curso (nomeCurso) VALUES ("Técnico em Agropecuária Integrado ao Ensino Médio");
 INSERT INTO curso (nomeCurso) VALUES ("Técnico em Administração");
 INSERT INTO curso (nomeCurso) VALUES ("Técnico em Informática");
 INSERT INTO curso (nomeCurso) VALUES ("Bacharelado em Sistemas de Informação");
