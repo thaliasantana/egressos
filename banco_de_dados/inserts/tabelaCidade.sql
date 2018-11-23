@@ -2024,8 +2024,7 @@ INSERT INTO cidade (idCidade, nomeCidade, idEstado) VALUES
 (2023, 'Maria da Fé', 11),
 (2024, 'Mariana', 11),
 (2025, 'Marilac', 11),
-(2026, 'Mário Campos', 11);
-INSERT INTO `cidade` (`id`, `nome`, `estado`) VALUES
+(2026, 'Mário Campos', 11),
 (2027, 'Maripá de Minas', 11),
 (2028, 'Marliéria', 11),
 (2029, 'Marmelópolis', 11),
@@ -3892,8 +3891,7 @@ INSERT INTO `cidade` (`id`, `nome`, `estado`) VALUES
 (3890, 'Barros Cassal', 23),
 (3891, 'Benjamin Constant do Sul', 23),
 (3892, 'Bento Gonçalves', 23),
-(3893, 'Boa Vista das Missões', 23);
-INSERT INTO `cidade` (`id`, `nome`, `estado`) VALUES
+(3893, 'Boa Vista das Missões', 23),
 (3894, 'Boa Vista do Buricá', 23),
 (3895, 'Boa Vista do Cadeado', 23),
 (3896, 'Boa Vista do Incra', 23),

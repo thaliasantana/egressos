@@ -1,10 +1,10 @@
-INSERT INTO pais (NomePais) VALUES ("Brasil");
+﻿INSERT INTO pais (NomePais) VALUES ("Brasil");
 
 INSERT INTO estado (nomeEstado, idPais) VALUES ("Goiás", 1);
 
 INSERT INTO cidade (nomeCidade, idEstado) VALUES ("Ceres", 1);
 INSERT INTO cidade (nomeCidade, idEstado) VALUES ("Uruana", 1);
-INSERT INTO cidade (nomeCidade, idEstado) VALUES ("Rubitaba", 1);
+INSERT INTO cidade (nomeCidade, idEstado) VALUES ("Rubiataba", 1);
 INSERT INTO cidade (nomeCidade, idEstado) VALUES ("São Patrício", 1);
 INSERT INTO cidade (nomeCidade, idEstado) VALUES ("Carmo do Rio Verde", 1);
 INSERT INTO cidade (nomeCidade, idEstado) VALUES ("Rialma", 1);
