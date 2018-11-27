@@ -25,7 +25,9 @@
 			<?php
 				$con =  new mysqli("localhost", "root", "", "dbegressos");
 
-				$ano = $_POST["ano"];
+				$data = new DateTime();
+				$ano = $data->format('Y');
+				
 				$resposta1 = $_POST["resposta1"];
 				$resposta2 = $_POST["resposta2"];
 				$resposta3 = $_POST["resposta3"];
@@ -36,8 +38,8 @@
 				$resposta8 = $_POST["resposta8"];
 				$resposta9 = $_POST["resposta9"];
 				$resposta10 = $_POST["resposta10"];
-				
-				echo $ano . "<br />"; 
+			
+				/*echo $ano . "<br />"; ;
 				echo $resposta1 . "<br />"; 
 				echo $resposta2 . "<br />"; 
 				echo $resposta3 . "<br />"; 
@@ -47,20 +49,25 @@
 				echo $resposta7 . "<br />"; 
 				echo $resposta8 . "<br />"; 
 				echo $resposta9 . "<br />"; 
-				echo $resposta10 . "<br />"; 
+				echo $resposta10 . "<br />"; */
 				
-				$con->query ("INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (1, 1, '$resposta1', '$ano'");
-				$con->query ("INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (1, 2, '$resposta1', '$ano'");
-				$con->query ("INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (1, 3, '$resposta1', '$ano'");
-				$con->query ("INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (1, 4, '$resposta1', '$ano'");
-				$con->query ("INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (1, 5, '$resposta1', '$ano'");
-				$con->query ("INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (1, 6, '$resposta1', '$ano'");
-				$con->query ("INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (1, 7, '$resposta1', '$ano'");
-				$con->query ("INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (1, 8, '$resposta1', '$ano'");
-				$con->query ("INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (1, 9, '$resposta1', '$ano'");
-				$con->query ("INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (1, 10, '$resposta1', '$ano'");
+				session_start();
+				$id = $_SESSION['id'];
+				//echo $id; . "<br />";
+				
+				$con->query("INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES ($id, 1, $resposta1, $ano)");
+				$con->query("INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES ($id, 2, $resposta2, $ano)");
+				$con->query("INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES ($id, 3, $resposta3, $ano)");
+				$con->query("INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES ($id, 4, $resposta4, $ano)");
+				$con->query("INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES ($id, 5, $resposta5, $ano)");
+				$con->query("INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES ($id, 6, $resposta6, $ano)");
+				$con->query("INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES ($id, 7, $resposta7, $ano)");
+				$con->query("INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES ($id, 8, $resposta8, $ano)");
+				$con->query("INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES ($id, 9, $resposta9, $ano)");
+				$con->query("INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES ($id, 10, $resposta10, $ano)");
 								
-				echo "Sua inscrição para o Encontro de Egressos " . $ano. " foi realizada com sucesso! <br />";
+				echo "<b>Sua inscrição para o Encontro de Egressos " . $ano. " foi realizada com sucesso!</b> <br />";
+				echo "<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />";
 			
 				$con->close();
 		
