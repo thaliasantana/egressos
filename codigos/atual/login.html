@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html>  
     <header>
@@ -20,22 +24,28 @@
         <div class="content">
             <section class="container" align="left">
             <div class="alinhar">
-                
-                <!-- Todo Conteúdo Aqui-->
+              
                 <label class="font"> Acompanhamento de Egressos </label> <br> <br>
+				
+                <form method="post" action="validar.php">
+                    E-mail <br />
+                    <input type="email" name="email" id="inputEmail" size="50" required autofocus/><br /> <br />
 
-                <form method="post" action="mail_send.php">
-                    Usuário: <br />
-                    <input type="text" name="nome" id="nome" size="70"/><br /> <br />
+                    Senha <br />
+                    <input type="password" name="senha" id="inputPassword" size="50" required/><br /> <br />
 
-                    Senha: <br />
-                    <input type="text" name="email" id="email" size="70"/><br /> <br />
-
-                    <input type="submit" value="Entrar" class="button"/>
+                    <button class="button type="submit"> Entrar</button>
                 </form>
-
-            </div>
-        </section>
+				
+				<!--Emitir erro-->
+				<p class="text-left text-danger">
+					<?php if(isset($_SESSION['loginErro'])){
+						echo $_SESSION['loginErro'];
+						unset ($_SESSION['loginErro']);
+					}?>
+				</P>	
+				
+			</section>
         </div>
         <footer class="footer">
             <a href="https://pt-br.facebook.com/ifgoianoceresoficial"><img src="src/imagem/facebook.png" alt="Facebook"></a>/ifgoianoceresoficial
