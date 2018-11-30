@@ -1,10 +1,10 @@
 <?php
 	session_start();
 	
-	if((isset($_POST['email'])) && if(isset($_POST['senha']))){
+	if((isset($_POST['email'])) && (isset($_POST['senha']))){
 		
 	}else{
-		$_SESSION['loginErro'] = "Usuário ou senha inválida.";
-		header("Location: login.html");
+		$_SESSION['loginErro'] = "Usuário ou senha inválido!";
+		header("Location: login.php");
 	}
 ?>

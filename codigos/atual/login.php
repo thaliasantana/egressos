@@ -34,10 +34,10 @@
                     <input type="password" name="senha" id="inputPassword" size="50" required/><br /> <br />
 
                     <button class="button type="submit"> Entrar</button>
-                </form>
+                </form> <br /> <br /> <br />
 				
 				<!--Emitir erro-->
-				<p class="text-left text-danger">
+				<p class="text-left">
 					<?php if(isset($_SESSION['loginErro'])){
 						echo $_SESSION['loginErro'];
 						unset ($_SESSION['loginErro']);
@@ -55,4 +55,3 @@
         </footer>
     </body>
 </html>
-
