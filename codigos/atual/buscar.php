@@ -21,67 +21,78 @@
 		<div class="alinhar">
 			<label class="font">Encontro de Egressos</label> <br> <br>
 			<label>Realize sua inscrição para o Encontro de Egressos do Campus Ceres do IF Goiano</label> <br> <br> <br>
-			
+
 			<?php
 				$con =  new mysqli("localhost", "root", "", "dbegressos");
 				mysqli_set_charset($con, "utf8");
 
-				$cpf = $_POST["cpf"];	
-				
-				
-				$sql = mysqli_query($con, "select egresso.nomeEgresso, egresso.cpfEgresso, egresso.dataNascimentoEgresso,
+				$cpf = $_POST["cpf"];
+
+
+				$sql = $con->query("select egresso.nomeEgresso, egresso.cpfEgresso, egresso.dataNascimentoEgresso,
 				egresso.emailEgresso, egresso.telefoneEgresso, egresso.whatsappEgresso, egresso.sexoEgresso, egresso.enderecoEgresso,
-				egresso.numeroEnderecoEgresso, egresso.setorEnderecoEgresso, egresso.complementoEgresso, cursoConcluido.idEgresso,
-				cursoConcluido.anoFimCursoConcluido, cursoConcluido.anoInicioCursoConcluido, curso.idCurso, curso.nomeCurso from egresso,
-				cursoConcluido, curso where cursoConcluido.idEgresso = egresso.idEgresso and cursoConcluido.idCurso = curso.idCurso
-				and cpfEgresso = '$cpf';") or die (
+				egresso.numeroEnderecoEgresso, egresso.setorEnderecoEgresso, egresso.complementoEgresso, egresso.idCidade,
+        cursoConcluido.idEgresso, cursoConcluido.anoFimCursoConcluido, cursoConcluido.anoInicioCursoConcluido,
+        curso.idCurso, curso.nomeCurso, cidade.idCidade, cidade.nomeCidade, cidade.idEstado, estado.idEstado,
+        estado.nomeEstado from
+        egresso, cursoConcluido, curso, cidade, estado where
+        cursoConcluido.idEgresso = egresso.idEgresso and cursoConcluido.idCurso = curso.idCurso
+        and egresso.idCidade = cidade.idCidade
+        and cidade.idEstado = estado.idEstado
+        and cpfEgresso = '$cpf';") or die (
 				mysqli_error($con)
 				);
-				
-				if ($aux = mysqli_fetch_assoc($sql)){
+
+				if ($aux = $sql->fetch_assoc()){
 					$id  = $aux["idEgresso"];
-					
+          $cpf = $aux["cpfEgresso"];
+
 					session_start();
 					$_SESSION['id'] =  $id;
-					
+          $_SESSION['cpf'] =  $cpf;
+
 					echo "Nome: <br />";
-					echo "<input type='text' name='nome' size='52' value='".$aux["nomeEgresso"]."'> <br /><br />";
+					echo "<input type='text' disabled name='nome' size='52' value='".$aux["nomeEgresso"]."'> <br /><br />";
 					echo "CPF: <br />";
-					echo "<input type='text' name='cpf' size='52' value='".$aux["cpfEgresso"]."'> <br /><br />";
+					echo "<input type='text' disabled name='cpf' size='52' value='".$aux["cpfEgresso"]."'> <br /><br />";
 					echo "Data de Nascimento: <br />";
-					echo "<input type='date' name='data' value='".$aux["dataNascimentoEgresso"]."'> <br /><br />";
+					echo "<input type='date' disabled name='data' value='".$aux["dataNascimentoEgresso"]."'> <br /><br />";
 					echo "E-mail: <br />";
-					echo "<input type='email' name='email' size='52' value='".$aux["emailEgresso"]."'> <br /><br />";
+					echo "<input type='email' disabled name='email' size='52' value='".$aux["emailEgresso"]."'> <br /><br />";
 					echo "Telefone: <br />";
-					echo "<input type='text' name='telefone' size='52' value='".$aux["telefoneEgresso"]."'> <br /><br />";
+					echo "<input type='text' disabled name='telefone' size='52' value='".$aux["telefoneEgresso"]."'> <br /><br />";
 					echo "WhatsApp: <br />";
-					echo "<input type='text' name='whatsapp' size='52' value='".$aux["whatsappEgresso"]."'> <br /><br />";
+					echo "<input type='text' disabled name='whatsapp' size='52' value='".$aux["whatsappEgresso"]."'> <br /><br />";
 					echo "Sexo: <br />";
-					echo "<input type='text' name='sexo' size='52' value='".$aux["sexoEgresso"]."'> <br /><br />";
+					echo "<input type='text' disabled name='sexo' size='52' value='".$aux["sexoEgresso"]."'> <br /><br />";
 					echo "Endereço: <br />";
-					echo "<input type='text' name='endereco' size='52' value='".$aux["enderecoEgresso"]."'> <br /><br />";
+					echo "<input type='text' disabled name='endereco' size='52' value='".$aux["enderecoEgresso"]."'> <br /><br />";
 					echo "Número: <br />";
-					echo "<input type='text' name='numero' size='52'  value='".$aux["numeroEnderecoEgresso"]."'> <br /><br />";
+					echo "<input type='text' disabled name='numero' size='52'  value='".$aux["numeroEnderecoEgresso"]."'> <br /><br />";
 					echo "Setor: <br />";
-					echo "<input type='text' name='setor' size='52' value='".$aux["setorEnderecoEgresso"]."'> <br /><br />";
+					echo "<input type='text' disabled name='setor' size='52' value='".$aux["setorEnderecoEgresso"]."'> <br /><br />";
 					echo "Complemento: <br />";
-					echo "<input type='text' name='complemento' size='52' value='".$aux["complementoEgresso"]."'> <br /><br />";
+					echo "<input type='text' disabled name='complemento' size='52' value='".$aux["complementoEgresso"]."'> <br /><br />";
+					echo "Cidade: <br />";
+					echo "<input type='text' disabled name='cidade' size='52' value='".$aux["nomeCidade"]."'> <br /><br />";
+					echo "Estado: <br />";
+					echo "<input type='text' disabled name='estado' size='52' value='".$aux["nomeEstado"]."'> <br /><br />";
 					echo "Curso concluído: <br />";
-					echo "<input type='text' name='curso' size='52' value='".$aux["nomeCurso"]."'> <br /><br />";
+					echo "<input type='text' disabled name='curso' size='52' value='".$aux["nomeCurso"]."'> <br /><br />";
 					echo "Ano de início do curso: <br />";
-					echo "<input type='text' name='inicio' size='52' value='".$aux["anoInicioCursoConcluido"]."'> <br /><br />";
+					echo "<input type='text' disabled name='inicio' size='52' value='".$aux["anoInicioCursoConcluido"]."'> <br /><br />";
 					echo "Ano de fim do curso: <br />";
-					echo "<input type='text' name='fim' size='52' value='".$aux["anoFimCursoConcluido"]."'> <br /><br />";
+					echo "<input type='text' disabled name='fim' size='52' value='".$aux["anoFimCursoConcluido"]."'> <br /><br />";
 					echo "<a href='questionario.php'><button class='button'>Avançar</button></a><br /><br /><br />";
 					echo "<a href='update.php'><button class='button1'>Alterar Cadastro</button></a> <br />";
 					} else {
-					echo "<b>CPF não cadastrado!</b><br /> <br />"; 
+					echo "<b>CPF não cadastrado!</b><br /> <br />";
 					echo "<a href='cadastrar.php'><button class='button1'>Criar Cadastro</button></a>";
-					echo "<br /> <br /><br /> <br /> <br /> <br /><br /> <br /><br /> <br />"; 
+					echo "<br /> <br /><br /> <br /> <br /> <br /><br /> <br /><br /> <br />";
 				}
 
 				$con->close();
-		
+
 			?>
 		</div>
 	</section>
@@ -94,5 +105,4 @@
       </div>
 
   </body>
-
 </html>

@@ -38,7 +38,7 @@
 						$resultado2 = $con->query("SELECT * FROM opcao WHERE idPergunta = " . $pergunta['idPergunta']);
 						while ($opcao = $resultado2->fetch_assoc()) {
 							echo "<input type='radio' name='resposta" . $pergunta['idPergunta'];
-							echo "' value='" . $opcao['idOpcao'] . "'> " . $opcao['texto'];
+							echo "' value='" . $opcao['idOpcao'] . "' required> " . $opcao['texto'];
 							echo "<br>";
 						}
 						echo "<br><br>";

@@ -6,10 +6,10 @@ INSERT INTO cidade (nomeCidade, idEstado) VALUES ("Ceres", 1);
 
 INSERT INTO curso (nomeCurso) VALUES ("Técnico em Informática");
 
-INSERT INTO egresso VALUES (null, "Fulano", "11122233344", "2000-01-01", "fulano@gmail.com", "987654321", "123456789", 
+INSERT INTO egresso VALUES (null, "Fulano", "11122233344", "2000-01-01", "fulano@gmail.com", "987654321", "123456789",
 "M", "Rua 1", "100", "Centro", "Casa", 1);
 
-INSERT INTO cursoConcluido (anoFimCursoConcluido, anoInicioCursoConcluido, idCurso, idEgresso) 
+INSERT INTO cursoConcluido (anoFimCursoConcluido, anoInicioCursoConcluido, idCurso, idEgresso)
 VALUES (2014, 2012, 1, 1);
 
 /* Aqui começa de fato todas as inserções referentes ao questionário */
@@ -83,6 +83,3 @@ INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (1, 7,
 INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (1, 8, 30, 2018);
 INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (1, 9, 32, 2018);
 INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (1, 10, 37, 2018);
-
-
-
