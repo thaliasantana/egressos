@@ -198,5 +198,3 @@ INSERT INTO cursoConcluido (anoFimCursoConcluido, anoInicioCursoConcluido, idCur
 VALUES (2007, 2002, 2, 99);
 INSERT INTO cursoConcluido (anoFimCursoConcluido, anoInicioCursoConcluido, idCurso, idEgresso) 
 VALUES (2015, 2011, 9, 100);
-INSERT INTO cursoConcluido (anoFimCursoConcluido, anoInicioCursoConcluido, idCurso, idEgresso) 
-VALUES (2000, 1998, 1, 74);
