@@ -3,7 +3,7 @@ INSERT INTO egresso VALUES (null, "Guilherme Machado", "12345678998", "1998-03-0
 INSERT INTO egresso VALUES (null, "Arthur Felipe Souza Starling", "11122233344", "2000-01-01", "arthurfss@gmail.com", "62997344532", "62997344532", 
 "M", "Rua Amato Alves Moreira", "453", "Jardim do Sol", "Casa", 939);
 INSERT INTO egresso VALUES (null, "Marina Malta Nogueira", "11123245343", "1989-11-01", "mariana@gmail.com", "61982321234", "61982321234", 
-"F", "Rua 45", "23", "Vale do Uru", "Casa", 944;
+"F", "Rua 45", "23", "Vale do Uru", "Casa", 944);
 INSERT INTO egresso VALUES (null, "João Pedro Guimarães Guilherme", "23456432134", "1995-06-23", "Joaopedro@gmail.com", "62987345321", "62987345321", 
 "M", "Avenida da Cerejeiras ", "07", "Centro", "torre b ", 5);
 INSERT INTO egresso VALUES (null, "Giovanna Menconi Rowell", "234678901234", "2000-11-11", "gihmenconi@gmail.com", "62993203949", "62993203949", 
