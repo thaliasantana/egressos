@@ -1,0 +1,1 @@
+INSERT INTO pais (NomePais) VALUES ("Brasil");
