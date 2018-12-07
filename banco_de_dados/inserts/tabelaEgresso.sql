@@ -198,14 +198,3 @@ INSERT INTO egresso VALUES (null, "Pedro Freixinho Nunes", "89728885667", "1955-
 "M", "Rua D", "2870", "Ipia", "Casa", 1081);
 INSERT INTO egresso VALUES (null, "Aparecida Nunes", "89732895667", "1965-12-29", "aparecidan@gmail.com", "62940005563", "62940005563", 
 "F", "Rua P", "870", "Novo", "Casa", 1077);
-
-INSERT INTO egresso VALUES (null, "Guilherme Luiz", "12332145781", "1999-03-01", "machado@gmail.com", "62997654311", "62123456700", 
-"M", "Rua 15", "114", "Centro", "Casa", 939);
-INSERT INTO egresso VALUES (null, "Laiane Machado", "62345678998", "1999-05-01", "laimachado@gmail.com", "62987774321", "62992456789", 
-"F", "Rua Rosana", "17", "Aeroporto", "Casa", 944);
-INSERT INTO egresso VALUES (null, "Josefá Neto", "89924666667", "1993-12-29", "josefan@gmail.com", "62995444763", "62999064763", 
-"M", "Avenida Ana Luzia", "2800", "Alvares Machado", "Casa", 1077);
-INSERT INTO egresso VALUES (null, "Thalita Santos", "89924666665", "2000-12-29", "thai@gmail.com", "62995444799", "62999064799", 
-"F", "Avenida Brasil", "2800", "Atileia", "Apartamento", 1081);
-INSERT INTO egresso VALUES (null, "Thania Santos Costa", "99924666665", "2001-12-22", "thaniaa@gmail.com", "62985444799", "62989064799", 
-"F", "Avenida Brasilia", "2900", "Sorriso", "Apartamento", 1121);
