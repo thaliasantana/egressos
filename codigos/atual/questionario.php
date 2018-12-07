@@ -24,6 +24,12 @@
   				<?php
   					$con =  new mysqli("localhost", "root", "", "dbegressos");
   					mysqli_set_charset($con, "utf8");
+
+            session_start();
+            if(!isset ($_SESSION['id'])){
+              echo "<script>alert('Insira seu CPF ou cadastre-se antes de responder o questionário!!'); document.location.href='encontro_de_egressos.html';</script>";
+            }
+
   					$resultado = $con->query("SELECT * FROM pergunta");
 
   					echo "<form method='post' action='inserir_questionario.php'>";

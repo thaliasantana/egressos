@@ -50,6 +50,10 @@
   				echo $resposta10 . "<br />"; */
 
   				session_start();
+          if(!isset ($_SESSION['id'])){
+            echo "<script>alert('Insira seu CPF ou cadastre-se!!'); document.location.href='encontro_de_egressos.html';</script>";
+          }
+
   				$id = $_SESSION['id'];
   				//echo $id; . "<br />";
 
