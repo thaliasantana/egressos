@@ -36,16 +36,16 @@ INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (1, 8,
 INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (1, 9, 32, 2018);
 INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (1, 10, 37, 2018);
 
-INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (2, 1, 2, 2018);
-INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (2, 2, 8, 2018);
-INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (2, 3, 18, 2018);
+INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (2, 1, 1, 2018);
+INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (2, 2, 7, 2018);
+INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (2, 3, 13, 2018);
 INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (2, 4, 19, 2018);
 INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (2, 5, 22, 2018);
-INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (2, 6, 26, 2018);
+INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (2, 6, 25, 2018);
 INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (2, 7, 27, 2018);
 INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (2, 8, 30, 2018);
 INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (2, 9, 32, 2018);
-INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (2, 10, 37, 2018);
+INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (2, 10, 38, 2018);
 
 INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (3, 1, 4, 2018);
 INSERT INTO resposta (idEgresso, idPergunta, idOpcao, anoResposta) VALUES (3, 2, 9, 2018);
